@@ -1,11 +1,14 @@
 import React from 'react';
+import { ThemeProvider } from "styled-components";
+import { lightTheme } from "./components/athoms";
+import Hero from "./components/templates/Hero";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Hello world</h1>
-    </div>
-  );
+    return (
+        <ThemeProvider theme={ lightTheme }>
+            <Hero />
+        </ThemeProvider>
+    );
 }
 
 export default App;
